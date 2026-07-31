@@ -1,0 +1,196 @@
+🚀 Phase 1: Flutter Foundation (Week 1–3)
+1. Introduction
+Flutter কী?✓
+Flutter Architecture✓
+Dart & Flutter সম্পর্ক✓
+Project Structure✓
+pubspec.yaml✓
+Hot Reload vs Hot Restart✓
+2. Widgets
+Widget কী?
+StatelessWidget
+StatefulWidget
+Build Method
+Widget Tree
+3. Layout Widgets
+Container
+SizedBox
+Padding
+Margin
+Row
+Column
+Expanded
+Flexible
+Wrap
+Stack
+Align
+Center
+AspectRatio
+4. Text & Image
+Text
+RichText
+Image
+Icon
+CircleAvatar
+Assets
+Custom Fonts
+5. Buttons
+ElevatedButton
+FilledButton
+OutlinedButton
+TextButton
+IconButton
+FloatingActionButton
+6. Input Widgets
+TextField
+TextFormField
+Form
+Validation
+Keyboard Types
+FocusNode
+7. Lists
+ListView
+GridView
+ListTile
+Card
+Custom List
+8. Navigation
+Navigator
+Named Routes
+Passing Data
+Bottom Navigation
+Drawer
+Tabs
+🚀 Phase 2: Intermediate Flutter (Week 4–6)
+9. Theme
+Light Theme
+Dark Theme
+ThemeData
+Material 3
+10. Responsive UI
+MediaQuery
+LayoutBuilder
+Responsive Design
+Orientation
+11. Local Storage
+SharedPreferences
+Secure Storage
+Hive
+SQLite (sqflite)
+12. Packages
+pub.dev
+Installing Packages
+Version Management
+13. Device Features
+Image Picker
+Camera
+File Picker
+Permission Handler
+URL Launcher
+Share Plus
+🚀 Phase 3: State Management (Week 7–9)
+14. State Management Basics
+setState
+Lifting State
+15. Provider
+16. Riverpod ⭐ (Main Focus)
+ConsumerWidget
+Provider
+StateNotifier
+AsyncValue
+FutureProvider
+StreamProvider
+🚀 Phase 4: Networking (Week 10–12)
+17. REST API
+HTTP
+Dio
+GET
+POST
+PUT
+DELETE
+18. JSON
+Serialization
+Model Class
+json_serializable (Introduction)
+19. Error Handling
+Try/Catch
+Loading
+Empty State
+Retry
+🚀 Phase 5: Architecture (Week 13–15)
+20. MVVM
+21. Repository Pattern
+22. Dependency Injection
+23. Clean Architecture ⭐
+Domain
+Data
+Presentation
+Use Cases
+🚀 Phase 6: Firebase (Week 16–18)
+24. Firebase Setup
+25. Authentication
+Email/Password
+Google Sign-In
+Phone OTP
+26. Firestore
+27. Firebase Storage
+28. Cloud Messaging (FCM)
+29. Crashlytics
+🚀 Phase 7: Advanced Flutter (Week 19–22)
+30. Animation
+Implicit Animation
+Explicit Animation
+Hero
+Lottie
+31. Google Maps
+32. Location
+33. Notifications
+34. Background Tasks
+35. Deep Linking
+36. Localization
+37. Accessibility
+38. Performance Optimization
+39. Caching
+40. Infinite Scroll
+🚀 Phase 8: Testing (Week 23)
+41. Unit Testing
+42. Widget Testing
+43. Integration Testing (Basic)
+🚀 Phase 9: Deployment (Week 24)
+44. Git & GitHub
+Git Init
+Clone
+Commit
+Push
+Pull
+Branch
+Merge
+Pull Request
+README
+GitHub Actions (Basic)
+45. CI/CD Basics
+46. Play Store Publish
+47. Portfolio Website
+48. ATS-Friendly CV
+49. LinkedIn Optimization
+50. Interview Preparation
+Flutter Interview Questions
+Dart Interview Questions
+HR Interview
+Problem Solving (Basic DSA)
+📱 Projects (এই ক্রমে)
+Calculator
+BMI Calculator
+Profile Card
+Todo App
+Notes App
+Expense Tracker
+Weather App
+News App
+Movie App
+Student Management
+Chat App
+E-commerce App
+Food Delivery App
+Banking App
+Final Production-Level App
