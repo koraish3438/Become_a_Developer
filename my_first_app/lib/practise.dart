@@ -13,6 +13,8 @@ void main() {
   koraish.myFunc();
   koraish.sum(54, 31);
   print(koraish.add(54, 31));
+
+  int a = 7;
 }
 
 class Human {
