@@ -15,6 +15,9 @@ void main() {
   print(koraish.add(54, 31));
 
   int a = 7;
+  if (a == 7) {
+    print("Yes I am a programmer");
+  }
 }
 
 class Human {
