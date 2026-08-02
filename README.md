@@ -119,7 +119,8 @@
 ---
 
 ## 📅 Date : 02-08-26, Sunday
-- Explain by default code of main.dart file 
+- Explain by default code of main.dart file
+- learn about minimum required code to run app
 - What is Container
 
 📚 Next Target:
