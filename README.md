@@ -115,10 +115,12 @@
 
 ## 📅 Date : 01-08-26, Saturday
 - Flutter Widgets
-
+- connect my project folder with github
 ---
 
 ## 📅 Date : 02-08-26, Sunday
+-
+
 📚 Next Target:
 - Stateless Widget
 - Stateful Widget
