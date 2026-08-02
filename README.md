@@ -111,9 +111,12 @@
 ### 🎯 Completed
 
 ✅ Dart Programming Complete
+---
 
+## 📅 Date : 01-08-26, Saturday
+- Flutter Widgets
+  
 📚 Next Target:
-- 
 - Stateless Widget
 - Stateful Widget
 - Layout Widgets
@@ -123,8 +126,3 @@
 - Row & Column
 - ListView
 - Navigation
-
----
-
-## 📅 Date : 01-08-26, Saturday
-- Flutter Widgets
