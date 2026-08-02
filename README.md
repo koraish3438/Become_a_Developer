@@ -119,6 +119,7 @@
 ---
 
 ## 📅 Date : 02-08-26, Sunday
+- Explain by default code of main.dart file 
 - What is Container
 
 📚 Next Target:
