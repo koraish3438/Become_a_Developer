@@ -115,7 +115,10 @@
 
 ## 📅 Date : 01-08-26, Saturday
 - Flutter Widgets
-  
+
+---
+
+## 📅 Date : 02-08-26, Sunday
 📚 Next Target:
 - Stateless Widget
 - Stateful Widget
