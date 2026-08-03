@@ -122,6 +122,10 @@
 - Explain by default code of main.dart file
 - learn about minimum required code to run app
 - What is Container
+---
+
+## 📅 Date : 02-08-26, Sunday
+-
 
 📚 Next Target:
 - Stateless Widget
