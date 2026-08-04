@@ -5,11 +5,11 @@ import 'package:flutter/material.dart';
 //       const MaterialApp(
 //         debugShowCheckedModeBanner: false,
 //         home: Scaffold(
-//           body: Center(
-//             child: Text("Hello Flutter"),
+//           body:Center(
+//               child: Text("Hello Flutter"),
+//             ),
 //           ),
 //         ),
-//       ),
 //   );
 // }
 
@@ -25,9 +25,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -48,10 +48,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-       title: Text("Flutter Container"),
+        title: Text("Flutter Container"),
+        backgroundColor: Colors.blue,
       ),
       body: Container(
-        
+        width: double.maxFinite,
+        height: 100,
+        color: Colors.lightBlueAccent,
       ),
     );
   }
