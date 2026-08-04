@@ -3,6 +3,7 @@
 A new Flutter project.
 For practice project
 Try Try Try , Try again
+Today is 04 August. I am trying to develop. 
 
 ## Getting Started
 
