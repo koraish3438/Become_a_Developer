@@ -129,7 +129,9 @@
 
 ---
 ## 📅 Date : 04-08-26, Sunday
--
+- Widget
+- container
+- center widget
 
 📚 Next Target:
 - Stateless Widget
