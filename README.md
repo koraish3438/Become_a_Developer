@@ -135,15 +135,14 @@
 
 ---
 ## 📅 Date : 05-08-26, Wednesday
-
-
-📚 Next Target:
 - Stateless Widget
 - Stateful Widget
 - Layout Widgets
 - Material App
 - Scaffold
 - Container
+
+📚 Next Target:
 - Row & Column
 - ListView
 - Navigation
