@@ -10,26 +10,46 @@ class ContainerPractice extends StatelessWidget {
         title: Center(child: Text("Container", style: TextStyle(color: Colors.white),)),
         backgroundColor: Colors.blue,
       ),
-      body: Row(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            width: 100,
-            height: 100,
-            color: Colors.red,
-            child: Center(child: Text("Red", style: TextStyle(color: Colors.white),)),
+          Row(
+            children: [
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.red,
+                child: Center(child: Text("Red", style: TextStyle(color: Colors.white),)),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.amber,
+                child: Center(child: Text("Blue", style: TextStyle(color: Colors.black),)),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.black,
+                child: Center(child: Text("Black", style: TextStyle(color: Colors.white),)),
+              ),
+            ],
           ),
-          Container(
-            width: 100,
-            height: 100,
-            color: Colors.amber,
-            child: Center(child: Text("Blue", style: TextStyle(color: Colors.black),)),
-          ),
+          
+          // Work by column
           Container(
             width: 100,
             height: 100,
             color: Colors.black,
             child: Center(child: Text("Black", style: TextStyle(color: Colors.white),)),
           ),
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.amber,
+            child: Center(child: Text("Black", style: TextStyle(color: Colors.black),)),
+          ),
+          
         ],
       ),
     );
