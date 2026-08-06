@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'container_practice.dart';
+import 'home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ContainerPractice(),
+      home: Home(),
     );
   }
 }

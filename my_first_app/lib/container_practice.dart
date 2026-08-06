@@ -27,7 +27,7 @@ class ContainerPractice extends StatelessWidget {
                   width: 100,
                   height: 100,
                   color: Colors.amber,
-                  child: Center(child: Text("Blue", style: TextStyle(color: Colors.black),)),
+                  child: Center(child: Text("Yellow", style: TextStyle(color: Colors.black),)),
                 ),
                 Container(
                   width: 100,
@@ -49,7 +49,7 @@ class ContainerPractice extends StatelessWidget {
               width: 100,
               height: 100,
               color: Colors.amber,
-              child: Center(child: Text("Black", style: TextStyle(color: Colors.black),)),
+              child: Center(child: Text("Yellow", style: TextStyle(color: Colors.black, fontSize: 25),)),
             ),
 
           ],
