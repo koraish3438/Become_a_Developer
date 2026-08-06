@@ -145,6 +145,8 @@
 ---
 ## 📅 Date : 06-08-26, Thursday
 - Text and TextStyle
+- Button in fluttter
+  
 📚 Next Target:
 - Row & Column
 - ListView
