@@ -144,7 +144,7 @@
 - 
 ---
 ## 📅 Date : 06-08-26, Thursday
-
+- Text and TextStyle
 📚 Next Target:
 - Row & Column
 - ListView
