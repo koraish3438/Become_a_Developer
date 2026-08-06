@@ -51,7 +51,9 @@ class ContainerPractice extends StatelessWidget {
               color: Colors.amber,
               child: Center(child: Text("Yellow", style: TextStyle(color: Colors.black, fontSize: 25),)),
             ),
-
+            ElevatedButton(onPressed: () {
+              Navigator.pop(context);
+            }, child: Text("Back to Home"))
           ],
         ),
       )

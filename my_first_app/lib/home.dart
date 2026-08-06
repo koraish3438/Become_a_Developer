@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app/container_practice.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -7,16 +8,48 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
         title: Center(
           child: Text(
             "Home",
             style: TextStyle(
                 color: Colors.white),),),
       ),
-      body: Center(
-        child: Text(
-            "This is Home section"
-        ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                alignment: Alignment.center,
+                width: 300,
+                height: 200,
+                padding: EdgeInsets.all(2),
+                color: Colors.yellow,
+                child: Text(
+                  "This is Home section",
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ],
+          ),
+          TextButton(
+            child: Text("Container Page"),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const ContainerPractice(),
+                )
+              );
+            },
+          ),
+        ],
       ),
     );
   }
