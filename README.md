@@ -146,6 +146,7 @@
 ## 📅 Date : 06-08-26, Thursday
 - Text and TextStyle
 - Button in fluttter(Text button, Elevated button, Outlined button)
+- Navigation
   
 📚 Next Target:
 - Row & Column
