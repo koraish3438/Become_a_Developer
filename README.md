@@ -147,7 +147,10 @@
 - Text and TextStyle
 - Button in fluttter(Text button, Elevated button, Outlined button)
 - Navigation
-  
+   
+---
+## 📅 Date : 07-08-26, Friday
+- Just change something
 📚 Next Target:
 - Row & Column
 - ListView
