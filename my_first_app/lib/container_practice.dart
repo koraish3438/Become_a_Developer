@@ -26,6 +26,18 @@ class ContainerPractice extends StatelessWidget {
                 Container(
                   width: 100,
                   height: 100,
+                  color: Colors.red,
+                  child: Center(child: Text("Red", style: TextStyle(color: Colors.white),)),
+                ),
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.red,
+                  child: Center(child: Text("Red", style: TextStyle(color: Colors.white),)),
+                ),
+                Container(
+                  width: 100,
+                  height: 100,
                   color: Colors.amber,
                   child: Center(child: Text("Yellow", style: TextStyle(color: Colors.black),)),
                 ),
