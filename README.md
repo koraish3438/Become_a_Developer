@@ -154,7 +154,10 @@
 ---
 ## 📅 Date : 08-08-26, Saturday
 - Just change something
-- Adding image 
+- Adding image
+- Column and Row
+
+
 📚 Next Target:
 - Row & Column
 - ListView
