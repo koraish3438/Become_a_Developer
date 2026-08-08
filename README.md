@@ -151,6 +151,9 @@
 ---
 ## 📅 Date : 07-08-26, Friday
 - Just change something
+---
+## 📅 Date : 08-08-26, Saturday
+- Just change something
 📚 Next Target:
 - Row & Column
 - ListView
