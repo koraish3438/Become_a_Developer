@@ -154,6 +154,7 @@
 ---
 ## 📅 Date : 08-08-26, Saturday
 - Just change something
+- Adding image 
 📚 Next Target:
 - Row & Column
 - ListView
