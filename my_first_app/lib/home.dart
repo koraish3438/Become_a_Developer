@@ -38,6 +38,16 @@ class Home extends StatelessWidget {
               ),
             ],
           ),
+          
+          Center(
+            child: Container(
+              width: 200,
+              height: 200,
+              child: Image.asset(
+                "assets/images/img1.png"
+              ),
+            ),
+          ),
           TextButton(
             child: Text("Container Page"),
             onPressed: () {
