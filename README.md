@@ -159,6 +159,7 @@
 ---
 ## 📅 Date : 08-08-26, Saturday
 - Column and Row
+- Inkwell widget
 
 📚 Next Target:
 - Row & Column
