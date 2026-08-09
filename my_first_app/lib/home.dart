@@ -39,6 +39,21 @@ class Home extends StatelessWidget {
               ),
             ],
           ),
+          Container(
+            height: 100,
+            color: Colors.blue,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text("A", style: TextStyle(fontSize: 25),),
+                Text("B", style: TextStyle(fontSize: 25),),
+                Text("C", style: TextStyle(fontSize: 25),),
+                Text("D", style: TextStyle(fontSize: 25),),
+                Text("E", style: TextStyle(fontSize: 25),),
+              ],
+            ),
+          ),
           
           Center(
             child: Container(
