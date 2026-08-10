@@ -157,10 +157,15 @@
 - Adding image
 - Column and Row
 ---
-## 📅 Date : 08-08-26, Saturday
+## 📅 Date : 09-08-26, Sunday
 - Column and Row
 - Inkwell widget
 
+---
+## 📅 Date : 10-08-26, Monday
+- 
+
+  
 📚 Next Target:
 - Row & Column
 - ListView
