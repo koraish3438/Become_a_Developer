@@ -163,8 +163,8 @@
 
 ---
 ## 📅 Date : 10-08-26, Monday
+- Inkwell action
 - 
-
   
 📚 Next Target:
 - Row & Column
