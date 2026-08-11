@@ -168,7 +168,9 @@
 
 ---
 ## 📅 Date : 11-08-26, Tuesday
--
+- List view
+- List Builder
+- List separator
 
 📚 Next Target:
 - Row & Column
