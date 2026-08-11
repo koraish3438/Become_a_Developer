@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_app/container_practice.dart';
+import 'package:my_first_app/item_list.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -99,6 +100,16 @@ class Home extends StatelessWidget {
               );
             },
           ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ItemList(),)
+                );
+              },
+              child: Text("Go To List")
+          )
         ],
       ),
     );
