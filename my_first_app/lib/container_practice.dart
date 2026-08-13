@@ -106,36 +106,39 @@ class ContainerPractice extends StatelessWidget {
                     ],
                   ),
                 ),
-                Row(
-                  children: [
-                    Expanded(
-                      flex: 1,
-                      child: Container(
-                        width: 100,
-                        height: 100,
-                        color: Colors.amber,
-                        child: Center(child: Text("Amber", style: TextStyle(color: Colors.black),)),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 10),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: 100,
+                          height: 100,
+                          color: Colors.amber,
+                          child: Center(child: Text("Amber", style: TextStyle(color: Colors.black),)),
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      flex: 2,
-                      child: Container(
-                        width: 100,
-                        height: 100,
-                        color: Colors.deepOrange,
-                        child: Center(child: Text("DeepOrange", style: TextStyle(color: Colors.black),)),
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          width: 100,
+                          height: 100,
+                          color: Colors.deepOrange,
+                          child: Center(child: Text("DeepOrange", style: TextStyle(color: Colors.black),)),
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      flex: 1,
-                      child: Container(
-                        width: 100,
-                        height: 100,
-                        color: Colors.pinkAccent,
-                        child: Center(child: Text("PinkAccent", style: TextStyle(color: Colors.black),)),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: 100,
+                          height: 100,
+                          color: Colors.pinkAccent,
+                          child: Center(child: Text("PinkAccent", style: TextStyle(color: Colors.black),)),
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
             
                 // Work by column
@@ -144,9 +147,9 @@ class ContainerPractice extends StatelessWidget {
                   height: 100,
                   color: Colors.black,
                   child: Center(child: Text("Black", style: TextStyle(color: Colors.white),)),
-                  
                 ),
                 Container(
+                  margin: EdgeInsets.only(top: 10, bottom: 10),
                   width: 100,
                   height: 100,
                   color: Colors.amber,
