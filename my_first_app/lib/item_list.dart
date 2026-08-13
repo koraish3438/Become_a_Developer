@@ -24,16 +24,29 @@ class ItemList extends StatelessWidget {
         //   itemExtent: 150,
         //   scrollDirection: Axis.horizontal,
         // )
+        // ListView.separated(itemBuilder: (context, index) {
+        //   return Padding(
+        //     padding: const EdgeInsets.all(8.0),
+        //     child: Text(arrNames[index], style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),),
+        //   );
+        // },
+        //   itemCount: arrNames.length,
+        //   separatorBuilder: (context, index) {
+        //     return Divider(height: 50, thickness: 2,);
+        //   },
+
         ListView.separated(itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(arrNames[index], style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),),
+          return ListTile(
+            leading: Text("${index + 1}"),
+            title: Text(arrNames[index]),
+            subtitle: Text(arrNames[index+1]),
+            trailing: Icon(Icons.add),
           );
         },
-          itemCount: arrNames.length,
-          separatorBuilder: (context, index) {
-            return Divider(height: 50, thickness: 2,);
-          },
+        itemCount: arrNames.length, 
+        separatorBuilder: (context, index) {
+          return Divider(height: 50, thickness: 2,);
+        },
         )
     );
   }
