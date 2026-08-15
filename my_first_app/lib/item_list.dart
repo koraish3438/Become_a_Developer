@@ -37,7 +37,17 @@ class ItemList extends StatelessWidget {
 
         ListView.separated(itemBuilder: (context, index) {
           return ListTile(
-            leading: Text("${index + 1}"),
+            leading: Container(
+              width: 50,
+              height: 50,
+              child: CircleAvatar(
+                child: Icon(
+                  Icons.person,
+                ),
+                backgroundColor: Colors.green,
+                maxRadius: 50,
+              ),
+            ),
             title: Text(arrNames[index]),
             subtitle: Text(arrNames[index+1]),
             trailing: Icon(Icons.add),
