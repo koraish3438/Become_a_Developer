@@ -39,12 +39,21 @@ class ItemList extends StatelessWidget {
           return ListTile(
             leading: CircleAvatar(
                 radius: 25,
-                child: Icon(
-                  Icons.person,
-                  color: Colors.white, 
-                  size: 35,
-                ),
                 backgroundColor: Colors.green,
+                child: ClipOval(
+                  child: Image.asset(
+                      "assets/images/img2.png",
+                    width: 50,
+                    height: 50,
+                    fit: BoxFit.cover
+                  ),
+                ),
+                // child: Icon(
+                //   Icons.person,
+                //   color: Colors.white, 
+                //   size: 35,
+                // ),
+                // backgroundColor: Colors.green,
               ),
             title: Text(arrNames[index]),
             subtitle: Text(arrNames[index+1]),
