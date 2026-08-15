@@ -188,6 +188,6 @@
 - Nothing to do
 
 ---
-## 📅 Date : 15-08-26, Friday
-- Nothing to do
+## 📅 Date : 15-08-26, Saturday
+- Circle Avatar
   
