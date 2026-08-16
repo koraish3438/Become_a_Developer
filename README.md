@@ -190,4 +190,8 @@
 ---
 ## 📅 Date : 15-08-26, Saturday
 - Circle Avatar
+- Icon
   
+---
+## 📅 Date : 16-08-26, Sunday
+-
