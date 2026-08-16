@@ -46,7 +46,7 @@ class ContainerPractice extends StatelessWidget {
                             ],
                           ),
                           child: Center(child:
-                          Text("Me", style: TextStyle(color: Colors.white),)),
+                          Text("Me", style: TextStyle(color: Colors.white, fontFamily: 'LobsterTwo'),)),
                         ),
                       ),
                       Container(

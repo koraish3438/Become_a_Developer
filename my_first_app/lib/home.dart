@@ -32,8 +32,7 @@ class Home extends StatelessWidget {
                   "This is Home section",
                   style: TextStyle(
                     fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic,
+                    fontFamily: 'LobsterTwo',
                   ),
                   textAlign: TextAlign.center,
                 ),
