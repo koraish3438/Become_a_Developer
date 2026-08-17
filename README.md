@@ -195,3 +195,7 @@
 ---
 ## 📅 Date : 16-08-26, Sunday
 - Custom font over text
+
+---
+## 📅 Date : 17-08-26, Monday
+-
