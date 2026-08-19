@@ -16,100 +16,102 @@ class Home extends StatelessWidget {
             style: TextStyle(
                 color: Colors.white),),),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                alignment: Alignment.center,
-                width: 300,
-                height: 200,
-                padding: EdgeInsets.all(2),
-                color: Colors.yellow,
-                child: Text(
-                  "This is Home section",
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontFamily: 'LobsterTwo',
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ],
-          ),
-          Container(
-            height: 100,
-            color: Colors.blue,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("A", style: TextStyle(fontSize: 25),),
-                Text("B", style: TextStyle(fontSize: 25),),
-                Text("C", style: TextStyle(fontSize: 25),),
-                Text("D", style: TextStyle(fontSize: 25),),
-                Text("E", style: TextStyle(fontSize: 25),),
+                Container(
+                  alignment: Alignment.center,
+                  width: 300,
+                  height: 200,
+                  padding: EdgeInsets.all(2),
+                  color: Colors.yellow,
+                  child: Text(
+                    "This is Home section",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontFamily: 'LobsterTwo',
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
               ],
             ),
-          ),
-
-          Center(
-            child: InkWell(
-              onTap: (){
-                Navigator.push(
+            Container(
+              height: 100,
+              color: Colors.blue,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text("A", style: TextStyle(fontSize: 25),),
+                  Text("B", style: TextStyle(fontSize: 25),),
+                  Text("C", style: TextStyle(fontSize: 25),),
+                  Text("D", style: TextStyle(fontSize: 25),),
+                  Text("E", style: TextStyle(fontSize: 25),),
+                ],
+              ),
+            ),
+        
+            Center(
+              child: InkWell(
+                onTap: (){
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ContainerPractice(),
+                      )
+                  );
+                },
+                onDoubleTap: (){
+                  Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const ContainerPractice(),
-                    )
-                );
-              },
-              onDoubleTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const ContainerPractice())
-                );
-              },
-              onLongPress: (){
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const ContainerPractice())
-                );
-              },
-             child: Container(
-               width: 200,
-               height: 200,
-               child: Image.asset(
-                   "assets/images/img1.png"
+                        builder: (context) => const ContainerPractice())
+                  );
+                },
+                onLongPress: (){
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const ContainerPractice())
+                  );
+                },
+               child: Container(
+                 width: 200,
+                 height: 200,
+                 child: Image.asset(
+                     "assets/images/img1.png"
+                  ),
                 ),
               ),
             ),
-          ),
-          
-          TextButton(
-            child: Text("Container Page"),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const ContainerPractice(),
-                )
-              );
-            },
-          ),
-          ElevatedButton(
+            
+            TextButton(
+              child: Text("Container Page"),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const ItemList(),)
+                      builder: (context) => const ContainerPractice(),
+                  )
                 );
               },
-              child: Text("Go To List")
-          )
-        ],
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ItemList(),)
+                  );
+                },
+                child: Text("Go To List")
+            )
+          ],
+        ),
       ),
     );
   }
