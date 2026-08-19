@@ -55,7 +55,7 @@ class ItemList extends StatelessWidget {
                 // ),
                 // backgroundColor: Colors.green,
               ),
-            title: Text(arrNames[index]),
+            title: Text(arrNames[index], style: TextStyle(fontFamily: 'LobsterTwo'),),
             subtitle: Text(arrNames[index+1]),
             trailing: Icon(Icons.add),
           );
