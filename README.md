@@ -202,8 +202,8 @@
 
 ---
 ## 📅 Date : 18-08-26, Tuesday
-- 
+- Nothing to do
 
 ---
 ## 📅 Date : 19-08-26, Wednesday
-- 
+- Custom font
