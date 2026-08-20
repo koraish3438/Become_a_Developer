@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_app/container_practice.dart';
 import 'package:my_first_app/item_list.dart';
+import 'package:my_first_app/ui_helper/util.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -44,10 +45,10 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text("A", style: TextStyle(fontSize: 25),),
-                  Text("B", style: TextStyle(fontSize: 25),),
-                  Text("C", style: TextStyle(fontSize: 25),),
-                  Text("D", style: TextStyle(fontSize: 25),),
+                  Text("A", style: textStyle1(fontWeight: FontWeight.w100, textColor: Colors.white),),
+                  Text("B", style: textStyle2(),),
+                  Text("C", style: textStyle3(),),
+                  Text("D", style: textStyle4(textColor: Colors.green),),
                   Text("E", style: TextStyle(fontSize: 25),),
                 ],
               ),
