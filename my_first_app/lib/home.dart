@@ -31,7 +31,7 @@ class Home extends StatelessWidget {
                   color: Colors.yellow,
                   child: Text(
                     "This is Home section",
-                    style: Theme.of(context).textTheme.headlineLarge,
+                    style: Theme.of(context).textTheme.headlineLarge!.copyWith(fontStyle: FontStyle.italic),
                     textAlign: TextAlign.center,
                   ),
                 ),
