@@ -31,10 +31,7 @@ class Home extends StatelessWidget {
                   color: Colors.yellow,
                   child: Text(
                     "This is Home section",
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                    ),
+                    style: Theme.of(context).textTheme.headlineLarge,
                     textAlign: TextAlign.center,
                   ),
                 ),
