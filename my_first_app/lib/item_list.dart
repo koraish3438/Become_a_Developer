@@ -36,28 +36,32 @@ class ItemList extends StatelessWidget {
         //   },
 
         ListView.separated(itemBuilder: (context, index) {
-          return ListTile(
-            leading: CircleAvatar(
-                radius: 25,
-                backgroundColor: Colors.green,
-                child: ClipOval(
-                  child: Image.asset(
-                      "assets/images/img2.png",
-                    width: 50,
-                    height: 50,
-                    fit: BoxFit.cover
+          return Card(
+            shadowColor: Colors.blue,
+            elevation: 12,
+            child: ListTile(
+              leading: CircleAvatar(
+                  radius: 25,
+                  backgroundColor: Colors.green,
+                  child: ClipOval(
+                    child: Image.asset(
+                        "assets/images/img2.png",
+                      width: 50,
+                      height: 50,
+                      fit: BoxFit.cover
+                    ),
                   ),
+                  // child: Icon(
+                  //   Icons.person,
+                  //   color: Colors.white, 
+                  //   size: 35,
+                  // ),
+                  // backgroundColor: Colors.green,
                 ),
-                // child: Icon(
-                //   Icons.person,
-                //   color: Colors.white, 
-                //   size: 35,
-                // ),
-                // backgroundColor: Colors.green,
-              ),
-            title: Text(arrNames[index], style: TextStyle(fontFamily: 'LobsterTwo'),),
-            subtitle: Text(arrNames[index+1]),
-            trailing: Icon(Icons.add),
+              title: Text(arrNames[index], style: TextStyle(fontFamily: 'LobsterTwo'),),
+              subtitle: Text(arrNames[index+1]),
+              trailing: Icon(Icons.add),
+            ),
           );
         },
         itemCount: arrNames.length, 
