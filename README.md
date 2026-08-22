@@ -215,4 +215,8 @@
 
 ---
 ## 📅 Date : 21-08-26, Friday 
-- 
+- Nothing to do
+  
+---
+## 📅 Date : 22-08-26, Saturday 
+- Card Widget
