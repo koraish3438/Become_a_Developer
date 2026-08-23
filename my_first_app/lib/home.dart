@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_first_app/container_practice.dart';
 import 'package:my_first_app/item_list.dart';
 import 'package:my_first_app/ui_helper/util.dart';
+import 'package:my_first_app/login.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -34,6 +35,19 @@ class Home extends StatelessWidget {
                     "This is Home section",
                     style: Theme.of(context).textTheme.headlineLarge!.copyWith(fontStyle: FontStyle.italic),
                     textAlign: TextAlign.center,
+                  ),
+                ),
+                Container(
+                  child: ElevatedButton(
+                    child: Text("Login"),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Login()
+                        )
+                      )
+                    },
                   ),
                 ),
               ],
