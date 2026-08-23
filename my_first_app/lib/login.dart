@@ -12,7 +12,51 @@ class Login extends StatelessWidget {
           child: Text("Login", style: TextStyle(color: Colors.white),),
         ),
       ),
-      body: Container(),
+      body: Center(
+          child: Container(
+            width: 300,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextField(
+                  decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(18),
+                        borderSide: BorderSide(
+                            color: Colors.black,
+                            width: 2
+                        )
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(18),
+                      borderSide: BorderSide(
+                        color: Colors.black
+                      )
+                    )
+                  ),
+                ),
+                Container(height: 11,),
+                TextField(
+                  decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(18),
+                      borderSide: BorderSide(
+                        color: Colors.black,
+                        width: 2
+                      )
+                    ),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(18),
+                          borderSide: BorderSide(
+                              color: Colors.black
+                          )
+                      )
+                  ),
+                ),
+              ],
+            ),
+          )
+      ),
     );
   }
 }
