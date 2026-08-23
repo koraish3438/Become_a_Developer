@@ -19,20 +19,27 @@ class Login extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextField(
+                  // enabled: false,
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(18),
                         borderSide: BorderSide(
-                            color: Colors.black,
+                            color: Colors.blue,
                             width: 2
                         )
                     ),
-                    border: OutlineInputBorder(
+                    enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(18),
                       borderSide: BorderSide(
                         color: Colors.black
                       )
-                    )
+                    ),
+                    // disabledBorder: OutlineInputBorder(
+                    //     borderRadius: BorderRadius.circular(18),
+                    //     borderSide: BorderSide(
+                    //         color: Colors.black
+                    //     )
+                    // )
                   ),
                 ),
                 Container(height: 11,),
@@ -41,11 +48,11 @@ class Login extends StatelessWidget {
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(18),
                       borderSide: BorderSide(
-                        color: Colors.black,
+                        color: Colors.blue,
                         width: 2
                       )
                     ),
-                      border: OutlineInputBorder(
+                      enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(18),
                           borderSide: BorderSide(
                               color: Colors.black
