@@ -220,3 +220,7 @@
 ---
 ## 📅 Date : 22-08-26, Saturday 
 - Card Widget
+
+---
+## 📅 Date : 23-08-26, Sunday 
+- Adding text input widgets (textfield)
