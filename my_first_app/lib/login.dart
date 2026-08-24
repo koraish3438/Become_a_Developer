@@ -23,14 +23,14 @@ class Login extends StatelessWidget {
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(18),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                             color: Colors.blue,
                             width: 2
                         )
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(18),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.black
                       )
                     ),
@@ -41,7 +41,10 @@ class Login extends StatelessWidget {
                     //     )
                     // ),
                     suffixText: "@gmail.com",
-                    prefixIcon: Icon(Icons.email, color: Colors.blue,)
+                    suffixStyle: const TextStyle(
+                      color: Colors.blue,
+                    ),
+                    prefixIcon: const Icon(Icons.email, color: Colors.blue,)
                   ),
                 ),
                 Container(height: 11,),
@@ -61,7 +64,10 @@ class Login extends StatelessWidget {
                         )
                     ),
                     prefixIcon: Icon(Icons.password, color: Colors.blue,),
-                    suffixText: "Password"
+                    suffixText: "Password",
+                    suffixStyle: const TextStyle(
+                      color: Colors.blue,
+                    ),
                   ),
                 ),
               ],
