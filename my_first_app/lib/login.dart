@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
-  
+
+  // var emailText = TextEditingController();
+  // var passText = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,8 +66,12 @@ class Login extends StatelessWidget {
                     prefixIcon: const Icon(Icons.email, color: Colors.green,)
                   ),
                 ),
+                
                 Container(height: 11,),
+                
                 TextField(
+                  obscureText: true,
+                  obscuringCharacter: '*',
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(18),
@@ -80,13 +87,27 @@ class Login extends StatelessWidget {
                         )
                     ),
                     prefixIcon: Icon(Icons.password, color: Colors.green,),
-                    
+                    hintText: "Password",
+                    hintStyle: const TextStyle(
+                      color: Colors.grey
+                    ),
                     // suffixText: "Password",
                     // suffixStyle: const TextStyle(
                     //   color: Colors.blue,
                     // ),
+                    suffixIcon: Icon(Icons.remove_red_eye, color: Colors.green,)
                   ),
                 ),
+                
+                Container(height: 11,),
+                
+                ElevatedButton(
+                    onPressed: () {
+
+                    },
+                    child: Text("Login", 
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green),),
+                )
               ],
             ),
           )
