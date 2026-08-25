@@ -4,11 +4,18 @@ import 'package:my_first_app/item_list.dart';
 import 'package:my_first_app/ui_helper/util.dart';
 import 'package:my_first_app/login.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({super.key});
 
   @override
+  State<Home> createState() => _HomeState();
+}
+class _HomeState extends State<Home> {
+  @override
   Widget build(BuildContext context) {
+    
+    var time = DateTime.now();
+    
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
@@ -25,29 +32,54 @@ class Home extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  alignment: Alignment.center,
-                  width: 300,
-                  height: 200,
-                  padding: EdgeInsets.all(2),
-                  color: Colors.yellow,
-                  child: Text(
-                    "This is Home section",
-                    style: Theme.of(context).textTheme.headlineLarge!.copyWith(fontStyle: FontStyle.italic),
-                    textAlign: TextAlign.center,
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    alignment: Alignment.center,
+                    width: 300,
+                    height: 150,
+                    padding: EdgeInsets.all(2),
+                    color: Colors.yellow,
+                    child: Text(
+                      "This is Home section",
+                      style: Theme.of(context).textTheme.headlineLarge!.copyWith(fontStyle: FontStyle.italic),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ),
-                Container(
-                  child: ElevatedButton(
-                    child: Text("Login"),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const Login()
-                        )
-                      );
-                    },
+                Expanded(
+                  flex: 1,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ElevatedButton(
+                      child: Text("Login"),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Login()
+                            )
+                        );
+                      },
+                    ),
+                  ),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      Text("Current Time : $time"),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: ElevatedButton(onPressed: (){
+                          setState((){
+                                
+                              }
+                          );
+                        }, child: Text("Current Time")),
+                      )
+                      
+                    ],
                   ),
                 ),
               ],
@@ -73,34 +105,33 @@ class Home extends StatelessWidget {
               ),
             ),
         
-            Center(
-              child: InkWell(
-                onTap: (){
-                  Navigator.push(
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Center(
+                child: InkWell(
+                  onTap: (){
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ContainerPractice(),
+                        )
+                    );
+                  },
+                  onDoubleTap: (){
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const ContainerPractice(),
-                      )
-                  );
-                },
-                onDoubleTap: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const ContainerPractice())
-                  );
-                },
-                onLongPress: (){
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const ContainerPractice())
-                  );
-                },
-               child: Container(
-                 width: 200,
-                 height: 200,
-                 child: Image.asset(
-                     "assets/images/img1.png"
+                          builder: (context) => const ContainerPractice())
+                    );
+                  },
+                  onLongPress: (){
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const ContainerPractice())
+                    );
+                  },
+                  child: Image.asset(
+                      "assets/images/img1.png"
                   ),
                 ),
               ),
