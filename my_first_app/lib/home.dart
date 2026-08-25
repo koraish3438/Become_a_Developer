@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Expanded(
-                  flex: 2,
+                  flex: 1,
                   child: Container(
                     alignment: Alignment.center,
                     width: 300,
@@ -47,28 +47,12 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-                Expanded(
-                  flex: 1,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: ElevatedButton(
-                      child: Text("Login"),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Login()
-                            )
-                        );
-                      },
-                    ),
-                  ),
-                ),
+                
                 Expanded(
                   flex: 1,
                   child: Column(
                     children: [
-                      Text("Current Time : $time"),
+                      Text("Current Time : ${time.hour}:${time.minute}:${time.second}"),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: ElevatedButton(onPressed: (){
@@ -148,16 +132,33 @@ class _HomeState extends State<Home> {
                 );
               },
             ),
-            ElevatedButton(
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ItemList(),)
+                    );
+                  },
+                  child: Text("Go To List")
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                child: Text("Login"),
                 onPressed: () {
                   Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const ItemList(),)
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Login()
+                      )
                   );
                 },
-                child: Text("Go To List")
-            )
+              ),
+            ),
           ],
         ),
       ),
