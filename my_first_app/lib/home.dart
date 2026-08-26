@@ -53,7 +53,10 @@ class _HomeState extends State<Home> {
                   flex: 1,
                   child: Column(
                     children: [
-                      Text("Current Time : ${time.hour}:${time.minute}:${time.second}"),
+                      Text("Current Time : "
+                          "${DateFormat('yMMM').format(time)}\n"
+                          "${DateFormat('jms').format(time)}"
+                      ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: ElevatedButton(onPressed: (){
