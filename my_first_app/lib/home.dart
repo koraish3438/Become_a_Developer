@@ -95,8 +95,8 @@ class _HomeState extends State<Home> {
         
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Center(
-                child: InkWell(
+              child: Row(
+                children: [ InkWell(
                   onTap: (){
                     Navigator.push(
                         context,
@@ -122,6 +122,35 @@ class _HomeState extends State<Home> {
                       "assets/images/img1.png"
                   ),
                 ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ElevatedButton(
+                        onPressed: () async{
+                          DateTime? datePicked = await showDatePicker(
+                              context: context,
+                              initialDate: DateTime.now(),
+                              firstDate: DateTime(2000),
+                              lastDate: DateTime(2030)
+                          );
+                        },
+                        child: Text("Date"),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ElevatedButton(
+                      onPressed: () async{
+                        TimeOfDay? timePicked = await showTimePicker(
+                            context: context,
+                            initialTime: TimeOfDay.now(),
+                          initialEntryMode: TimePickerEntryMode.input
+                        );
+                      },
+                      child: Text("Time"),
+                    ),
+                  ),
+                  
+                ]
               ),
             ),
             
