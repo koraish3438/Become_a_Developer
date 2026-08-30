@@ -192,6 +192,21 @@ class _HomeState extends State<Home> {
                 },
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                child: Text("Gird View"),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const GridView();
+                      )
+                  );
+                },
+              ),
+            ),
+            
           ],
         ),
       ),
