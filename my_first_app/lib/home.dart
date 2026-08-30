@@ -4,6 +4,7 @@ import 'package:my_first_app/item_list.dart';
 import 'package:my_first_app/ui_helper/util.dart';
 import 'package:my_first_app/login.dart';
 import 'package:intl/intl.dart';
+import 'package:my_first_app/my_grid_view.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -200,7 +201,7 @@ class _HomeState extends State<Home> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const GridView();
+                          builder: (context) => const MyGridView(),
                       )
                   );
                 },
