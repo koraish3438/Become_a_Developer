@@ -5,6 +5,20 @@ class MyGridView extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
+    
+    var arrColors = [
+      Colors.brown,
+      Colors.red,
+      Colors.deepOrange,
+      Colors.yellow,
+      Colors.blueGrey,
+      Colors.lightBlue,
+      Colors.indigo,
+      Colors.green,
+      Colors.deepPurpleAccent,
+      Colors.pink,
+    ];
+    
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
@@ -14,73 +28,80 @@ class MyGridView extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Container(
-            height: 200,
-            child: GridView.count(crossAxisCount: 5,
-              
-              // crossAxisSpacing: 11,
-              // mainAxisSpacing: 11,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(color: Colors.green,),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(color: Colors.grey,),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(color: Colors.blue,),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(color: Colors.black,),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(color: Colors.orange,),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(color: Colors.pinkAccent,),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(color: Colors.amber,),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(color: Colors.yellow,),
-                ),
-              ],
-            ),
-          ),
+          // Container(
+          //   height: 200,
+          //   child: GridView.count(crossAxisCount: 5,
+          //    
+          //     // crossAxisSpacing: 11,
+          //     // mainAxisSpacing: 11,
+          //     children: [
+          //       Padding(
+          //         padding: const EdgeInsets.all(8.0),
+          //         child: Container(color: Colors.green,),
+          //       ),
+          //       Padding(
+          //         padding: const EdgeInsets.all(8.0),
+          //         child: Container(color: Colors.grey,),
+          //       ),
+          //       Padding(
+          //         padding: const EdgeInsets.all(8.0),
+          //         child: Container(color: Colors.blue,),
+          //       ),
+          //       Padding(
+          //         padding: const EdgeInsets.all(8.0),
+          //         child: Container(color: Colors.black,),
+          //       ),
+          //       Padding(
+          //         padding: const EdgeInsets.all(8.0),
+          //         child: Container(color: Colors.orange,),
+          //       ),
+          //       Padding(
+          //         padding: const EdgeInsets.all(8.0),
+          //         child: Container(color: Colors.pinkAccent,),
+          //       ),
+          //       Padding(
+          //         padding: const EdgeInsets.all(8.0),
+          //         child: Container(color: Colors.amber,),
+          //       ),
+          //       Padding(
+          //         padding: const EdgeInsets.all(8.0),
+          //         child: Container(color: Colors.yellow,),
+          //       ),
+          //     ],
+          //   ),
+          // ),
           
-          Container(
-            height: 100,
-          ),
+          // Container(
+          //   height: 100,
+          // ),
 
-          Container(
-            height: 300,
-            child: GridView.extent(maxCrossAxisExtent: 100,
-              crossAxisSpacing: 11,
-              mainAxisSpacing: 11,
-              children: [
-                Container(color: Colors.green,),
-                Container(color: Colors.orange,),
-                Container(color: Colors.pink,),
-                Container(color: Colors.amber,),
-                Container(color: Colors.black,),
-                Container(color: Colors.blue,),
-                Container(color: Colors.grey,),
-                Container(color: Colors.lightBlueAccent,),
-                Container(color: Colors.yellow,),
-                Container(color: Colors.deepOrange,),
-                Container(color: Colors.red,),
-                Container(color: Colors.brown,),
-              ],
-            ),
+          // Container(
+          //   height: 300,
+          //   child: GridView.extent(maxCrossAxisExtent: 50,
+          //     crossAxisSpacing: 11,
+          //     mainAxisSpacing: 11,
+          //     children: [
+          //       Container(color: Colors.green,),
+          //       Container(color: Colors.orange,),
+          //       Container(color: Colors.pink,),
+          //       Container(color: Colors.amber,),
+          //       Container(color: Colors.black,),
+          //       Container(color: Colors.blue,),
+          //       Container(color: Colors.grey,),
+          //       Container(color: Colors.lightBlueAccent,),
+          //       Container(color: Colors.yellow,),
+          //       Container(color: Colors.deepOrange,),
+          //       Container(color: Colors.red,),
+          //       Container(color: Colors.brown,),
+          //     ],
+          //   ),
+          // ),
+
+          GridView.builder(itemBuilder: (context,index) {
+            return Container(color: arrColors[index],);
+          },
+            itemCount: arrColors.length,
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 5),
           )
         ],
       ),
