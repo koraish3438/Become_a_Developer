@@ -259,7 +259,7 @@
 
 ---
 ## 📅 Date : 01-09-26, Tuesday
-- Callback function
+- Grid view builder
 
 ---
 ## 📅 Date : 02-09-26, Wednesday
