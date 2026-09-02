@@ -13,6 +13,17 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 class _HomeState extends State<Home> {
+  
+  callBack() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const MyGridView(),
+        )
+    );
+    
+  }
+  
   @override
   Widget build(BuildContext context) {
     
@@ -197,14 +208,7 @@ class _HomeState extends State<Home> {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                 child: Text("Gird View"),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const MyGridView(),
-                      )
-                  );
-                },
+                onPressed: callBack,
               ),
             ),
             
