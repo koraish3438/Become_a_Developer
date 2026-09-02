@@ -260,3 +260,7 @@
 ---
 ## 📅 Date : 01-09-26, Tuesday
 - Callback function
+
+---
+## 📅 Date : 02-09-26, Wednesday
+- Callback function
