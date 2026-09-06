@@ -6,7 +6,7 @@ class ItemList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    var arrNames = ["Amdadul", "Ashik", "Koraish", "Jui", "Rifat", "Kajam", "Jannati"];
+    var arrNames = ["Amdadul", "Ashik", "Koraish", "Jui", "Rifat", "Kajam", "Jannati", "Alone"];
 
     return Scaffold(
         appBar: AppBar(
