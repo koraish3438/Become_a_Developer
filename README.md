@@ -299,5 +299,5 @@
 - Nothing to do
 
 ---
-## 📅 Date : 11-09-26, Wednesday
+## 📅 Date : 11-09-26, Friday 
 - Nothing to do
