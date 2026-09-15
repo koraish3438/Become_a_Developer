@@ -311,7 +311,7 @@
 - Nothing to do
 
 ---
-## 📅 Date : 14-09-26, Saturday 
+## 📅 Date : 14-09-26, Monday
 - Nothing to do
 
 ---
