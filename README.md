@@ -315,7 +315,7 @@
 - Nothing to do
 
 ---
-## 📅 Date : 15-09-26, Saturday 
+## 📅 Date : 15-09-26, Tuesday 
 - Nothing to do
 
 ---
