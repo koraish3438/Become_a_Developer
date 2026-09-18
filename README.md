@@ -323,7 +323,7 @@
 - Nothing to do
 
 ---
-## 📅 Date : 17-09-26, Saturday 
+## 📅 Date : 17-09-26, Thursday 
 - Nothing to do
 
 ---
