@@ -335,7 +335,7 @@
 - Nothing to do
 
 ---
-## 📅 Date : 20-09-26, Saturday 
+## 📅 Date : 20-09-26, Sunday 
 - Nothing to do
 
 ---
